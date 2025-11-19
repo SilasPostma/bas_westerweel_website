@@ -62,30 +62,30 @@ export default function Home() {
             </div>{" "}
           </div>
         </div>
-        <RoundButton className="absolute bottom-[1vh] right-[1vh] transform translate-x-[5vh] translate-y-[5vh]" />
+        <RoundButton className="absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2" />
 
-        <div className="absolute right-[-6vh] top-1/2 -translate-y-1/2 flex flex-col space-y-4 items-center">
+        <div className="absolute right-[-6vh] top-1/2 -translate-y-1/2 flex flex-col space-y-4">
           <SquareButton
             rows={[
-              { text: "COA", indent: "0em" },
-              { text: "CH", indent: "0.5em" },
-              { text: " ", indent: "0em" }, // optional empty row
+              { text: "COA", align: "left" },
+              { text: "CH", align: "right" },
+              { text: "", align: "left" },
             ]}
           />
 
           <SquareButton
             rows={[
-              { text: "TRAI", indent: "0em" },
-              { text: "NER", indent: "0.6em" },
-              { text: "", indent: "0em" },
+              { text: "TRAI", align: "left" },
+              { text: "NER", align: "right" },
+              { text: "", align: "left" },
             ]}
           />
 
           <SquareButton
             rows={[
-              { text: "PRES", indent: "0em" },
-              { text: "ENT", indent: "0.5em" },
-              { text: "ATOR", indent: "0em" },
+              { text: "PRES", align: "left" },
+              { text: "ENT", align: "right" },
+              { text: "ATOR", align: "left" },
             ]}
           />
         </div>
