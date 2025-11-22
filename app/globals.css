@@ -3,18 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  
+
   /* Design System - Color */
   --color-primary: #EA4025;
   --color-primary-dark: #c53020;
   --color-primary-light: #f9d6d0;
-  
+
   /* Design System - Sizing */
   --square-size: clamp(80px, 13vh, 300px);
   --square-border: clamp(2px, 1.5vh, 8px);
   --main-size: clamp(400px, 70vh, 800px);
   --main-border: clamp(3px, 1.5vh, 10px);
-  
+
   /* Design System - Typography */
   --text-large: clamp(12px, 1.5vh, 20px);
   --text-medium: clamp(10px, 1.4vh, 18px);

@@ -12,7 +12,8 @@ export default function RedButton({
   return (
     <button
       onClick={onClick}
-      className={`bg-[#EA4025] text-white w-40 h-8 rounded-full relative left-3 -bottom-4 hover:bg-[#c53020] transition-colors duration-200 font-bold text-[clamp(12px,1.5vh,20px)] ${className}`}
+      // Replaced text-[clamp(...)] with fluid-title
+      className={`bg-[#EA4025] text-white w-40 h-8 rounded-full relative left-3 -bottom-4 hover:bg-[#c53020] transition-colors duration-200 font-bold fluid-title ${className}`}
     >
       {text}
     </button>
