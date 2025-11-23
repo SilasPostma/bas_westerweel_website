@@ -25,7 +25,7 @@ export default function SceneNavigation({
           ]}
           sceneId={config.sceneId}
           onSceneChange={onSceneChange}
-          isActive={activeScene === config.sceneId}
+          isActive={activeScene.split('_')[0] === config.sceneId.split('_')[0]}
         />
       ))}
     </div>

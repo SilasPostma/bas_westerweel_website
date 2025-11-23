@@ -18,7 +18,16 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white flex items-center justify-center flex-col space-y-10 relative">
       <div className="relative flex items-center justify-center">
-        <ProfileCard text={currentScene.text} redButtonLink={currentScene.redButtonLink} redButtonText={currentScene.redButtonText} image={currentScene.image} onSceneChange={setScene} />
+        <ProfileCard 
+          text={currentScene.text} 
+          redButtonLink={currentScene.redButtonLink} 
+          redButtonText={currentScene.redButtonText} 
+          image={currentScene.image} 
+          onSceneChange={setScene}
+          headerButtons={currentScene.headerButtons}
+          activeScene={activeScene}
+          infoImage={currentScene.infoImage}
+        />
         <SceneNavigation activeScene={activeScene} onSceneChange={setScene} />
       </div>
     </main>
