@@ -6,9 +6,9 @@ import ProfileCard from "../components/home/ProfileCard";
 import SceneNavigation from "../components/home/SceneNavigation";
 
 export default function Home() {
-  const [activeScene, setActiveScene] = useState(1);
+  const [activeScene, setActiveScene] = useState("home");
 
-  const setScene = (x: number) => {
+  const setScene = (x: string) => {
     setActiveScene(x);
   };
 
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white flex items-center justify-center flex-col space-y-10 relative">
       <div className="relative flex items-center justify-center">
-        <ProfileCard text={currentScene.text} />
+        <ProfileCard text={currentScene.text} redButtonLink={currentScene.redButtonLink} redButtonText={currentScene.redButtonText} image={currentScene.image} onSceneChange={setScene} />
         <SceneNavigation activeScene={activeScene} onSceneChange={setScene} />
       </div>
     </main>

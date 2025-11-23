@@ -3,8 +3,8 @@ interface SquareButtonProps {
   onClick?: () => void;
   className?: string;
   // Added props used by callers in `app/page.tsx`
-  sceneId?: number;
-  onSceneChange?: (id: number) => void;
+  sceneId?: string;
+  onSceneChange?: (id: string) => void;
   isActive?: boolean;
 }
 
@@ -32,11 +32,11 @@ export default function SquareButton({
   return (
     <button
       onClick={handleClick}
-      className={`w-[clamp(80px,13vh,300px)] h-[clamp(80px,13vh,300px)]
-                  border-[clamp(2px,1.5vh,8px)] ${baseColor} border-[#EA4025]
+      className={`w-square-size h-square-size
+                  border-square ${baseColor} border-[#EA4025]
                   flex flex-col
                   box-border hover:bg-[#EA4025] hover:text-white transition-colors duration-200
-                   font-extrabold text-[clamp(22px,2.5vh,30px)] overflow-hidden
+                   font-extrabold text-square overflow-hidden
                   ${className}`}
     >
       {filledRows.map((row, i) => {

@@ -2,8 +2,8 @@ import SquareButton from "../ui/SquareButton";
 import { buttonConfig } from "../../lib/data";
 
 interface SceneNavigationProps {
-  activeScene: number;
-  onSceneChange: (sceneId: number) => void;
+  activeScene: string;
+  onSceneChange: (sceneId: string) => void;
 }
 
 export default function SceneNavigation({
@@ -11,7 +11,10 @@ export default function SceneNavigation({
   onSceneChange,
 }: SceneNavigationProps) {
   return (
-    <div className="absolute  top-1/2 -translate-y-1/2 flex flex-col space-y-4">
+    <div className="absolute top-1/2 -translate-y-1/2 translate-x-1/2 flex flex-col space-y-4"
+    style={{
+    right: 'calc(0.5 * var(--border-width-square))',
+  }}>
       {buttonConfig.map((config) => (
         <SquareButton
           key={config.sceneId} // Important for lists
