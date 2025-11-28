@@ -11,9 +11,20 @@ interface ProfileCardProps {
   headerButtons?: { text: string; sceneId: string }[];
   activeScene: string;
   infoImage?: StaticImageData;
+  barText: string;
 }
 
-export default function ProfileCard({ text, redButtonText, image, redButtonLink, onSceneChange, headerButtons, activeScene, infoImage }: ProfileCardProps) {
+export default function ProfileCard({
+  text,
+  redButtonText,
+  image,
+  redButtonLink,
+  onSceneChange,
+  headerButtons,
+  activeScene,
+  infoImage,
+  barText,
+}: ProfileCardProps) {
   return (
     <div className="relative w-main-size h-main-size border-main border-[#EA4025] flex flex-col box-border">
       {/* Top half image */}
@@ -24,7 +35,7 @@ export default function ProfileCard({ text, redButtonText, image, redButtonLink,
       {/* Red middle bar */}
       <div className="h-[10%] bg-[#EA4025] flex items-center justify-start ">
         <div className="text-white text-large font-bold transform translate-x-4">
-          Als ik naar mezelf (probeer te) kijken.
+          {barText}
         </div>
       </div>
 
@@ -44,10 +55,9 @@ export default function ProfileCard({ text, redButtonText, image, redButtonLink,
           </div>
         )}
         {headerButtons && headerButtons.length == 0 && (
-          <div className="mt-[23px]">
-          </div>
+          <div className="mt-[23px]"></div>
         )}
-        
+
         {/* <p className="text-[#EA4025] font-extrabold text-large mb-1">
           Wie ben ik dan?
         </p> */}
@@ -56,16 +66,26 @@ export default function ProfileCard({ text, redButtonText, image, redButtonLink,
         </p>
       </div>
       <div className="absolute bottom-10 left-2 z-10 transform translate-y-1/2 w-35 h-5">
-        {infoImage && <Image src={infoImage} alt="top" fill style={{ objectFit: "contain" }} />}
+        {infoImage && (
+          <Image
+            src={infoImage}
+            alt="top"
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        )}
       </div>
       <RedButton text={redButtonText} href={redButtonLink}></RedButton>
 
       {/* Text under square */}
-      <div className="absolute -left-2 -bottom-1 z-0" style={{ transform: 'translateY(100%)' }}>
+      <div
+        className="absolute -left-2 -bottom-1 z-0"
+        style={{ transform: "translateY(100%)" }}
+      >
         <div
           className={`text-black font-extrabold text-xl tracking-tighter cursor-pointer`}
           onClick={() => onSceneChange("home")}
-          >
+        >
           BASWESTERWEEL
         </div>
       </div>
