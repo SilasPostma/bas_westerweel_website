@@ -65,7 +65,7 @@ export default function ProfileCard({
           {text}
         </p>
       </div>
-      <div className="absolute bottom-10 left-2 z-10 transform translate-y-1/2 w-35 h-5">
+      <div className="absolute bottom-10 left-2 z-10 transform translate-y-1/2 w-52.5 h-7.5">
         {infoImage && (
           <Image
             src={infoImage}
@@ -79,7 +79,7 @@ export default function ProfileCard({
 
       {/* Text under square */}
       <div
-        className="absolute -left-2 -bottom-1 z-0"
+        className="absolute -left-2 -bottom-3 z-0"
         style={{ transform: "translateY(100%)" }}
       >
         <div

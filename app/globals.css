@@ -9,17 +9,17 @@
   /* Design System - Sizing */
   --width-square-size: clamp(80px, 13vh, 300px);
   --height-square-size: clamp(80px, 13vh, 300px);
-  --width-main-size: clamp(250px, 60vh, 800px);
-  --height-main-size: clamp(250px, 60vh, 800px);
+  --width-main-size: clamp(250px, 80vh, 800px);
+  --height-main-size: clamp(250px, 80vh, 800px);
 
-  --border-width-square: clamp(2px, 1.5vh, 8px);
-  --border-width-main: clamp(3px, 1.5vh, 10px);
+  --border-width-square: clamp(6px, 1.5vh, 20px);
+  --border-width-main: clamp(6px, 1.5vh, 20px);
 
   /* Design System - Typography */
-  --text-large: clamp(12px, 1.5vh, 20px);
-  --text-medium: clamp(10px, 1.4vh, 18px);
-  --text-small: clamp(7px, 0.7vh, 12px);
-  --text-square: clamp(20px, 2.3vh, 26px);
+  --text-large: clamp(12px, 2.2vh, 26px);
+  --text-medium: clamp(10px, 1.8vh, 20px);
+  --text-small: clamp(7px, 1.2vh, 14px);
+  --text-square: clamp(20px, 3.3vh, 40px);
 }
 
 :root {

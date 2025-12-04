@@ -11,10 +11,12 @@ export default function SceneNavigation({
   onSceneChange,
 }: SceneNavigationProps) {
   return (
-    <div className="absolute top-1/2 -translate-y-1/2 translate-x-1/2 flex flex-col space-y-4"
-    style={{
-    right: 'calc(0.5 * var(--border-width-square))',
-  }}>
+    <div
+      className="absolute top-1/2 -translate-y-1/2 translate-x-1/2 flex flex-col space-y-4"
+      style={{
+        right: "calc(0.5 * var(--border-width-main))",
+      }}
+    >
       {buttonConfig.map((config) => (
         <SquareButton
           key={config.sceneId} // Important for lists
@@ -25,7 +27,7 @@ export default function SceneNavigation({
           ]}
           sceneId={config.sceneId}
           onSceneChange={onSceneChange}
-          isActive={activeScene.split('_')[0] === config.sceneId.split('_')[0]}
+          isActive={activeScene.split("_")[0] === config.sceneId.split("_")[0]}
         />
       ))}
     </div>
