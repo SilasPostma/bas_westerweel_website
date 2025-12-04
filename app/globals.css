@@ -9,8 +9,8 @@
   /* Design System - Sizing */
   --width-square-size: clamp(80px, 13vh, 300px);
   --height-square-size: clamp(80px, 13vh, 300px);
-  --width-main-size: clamp(250px, 80vh, 800px);
-  --height-main-size: clamp(250px, 80vh, 800px);
+  --width-main-size: clamp(250px, 60vh, 800px);
+  --height-main-size: clamp(250px, 60vh, 800px);
 
   --border-width-square: clamp(2px, 1.5vh, 8px);
   --border-width-main: clamp(3px, 1.5vh, 10px);
