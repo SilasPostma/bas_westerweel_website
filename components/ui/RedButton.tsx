@@ -18,7 +18,7 @@ export default function RedButton({
     text-medium
     bg-[#EA4025] 
     text-white 
-    h-6 
+    h-4 
     rounded-full 
     hover:bg-[#c53020] 
     transition-colors 
