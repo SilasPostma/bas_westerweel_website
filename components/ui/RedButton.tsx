@@ -31,7 +31,7 @@ export default function RedButton({
     transition-colors 
     duration-200 
     font-bold 
-    px-3.5 
+    px-3 
     inline-block
     w-fit
     flex 
@@ -41,7 +41,7 @@ export default function RedButton({
   `;
 
   const positionStyle = {
-    left: "var(--border-width-main)",
+    // left: "var(--border-width-main)",
     bottom: "var(--border-width-main)",
   };
 

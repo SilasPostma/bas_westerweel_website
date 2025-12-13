@@ -86,14 +86,15 @@ export default function ProfileCard({
       </div>
 
       <div
-        className="pl-2 pt-1 pb-8.5 flex flex-col justify-start mb-2"
+        className="pl-[var(--border-width-main)] pt-1 pb-8.5 flex flex-col justify-start mb-2"
         style={{
-          height: "44%",
+          /* Height reduced to prevent overlap with bottom elements (RedButton/InfoImage) */
+          height: "calc(44% - 80px)",
           paddingRight: "calc(var(--width-square-size) * 0.7)",
         }}
       >
         {headerButtons && headerButtons.length > 0 && (
-          <div className="flex flex-row gap-2 mb-2">
+          <div className="flex flex-row gap-2 mb-2 items-center">
             {headerButtons.map((btn) => (
               <HeaderButton
                 key={btn.text}
@@ -121,7 +122,8 @@ export default function ProfileCard({
         <div
           className="absolute z-10 w-[var(--info-image-width)] h-[var(--info-image-height)]"
           style={{
-            left: "calc(var(--border-width-main) + 14px)",
+            /* Left offset = border-width + button padding (12px/0.75rem for px-3) */
+            left: "calc(var(--border-width-main) + 12px)",
             bottom:
               "calc(var(--border-width-main) + var(--text-medium) * 2.5)",
             }}

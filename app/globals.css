@@ -39,11 +39,15 @@
   --sidebar-ring: oklch(0.708 0 0);
 
 
+  /* Mobile (Default) */
   --width-square-size: 92px;
   --height-square-size: 92px;
 
-  --width-main-size: max(350px, 70vh);
-  --height-main-size: max(350px, 70vh);
+  /* Fixed Mobile Size */
+  --width-main-size: 350px;
+  --height-main-size: 600px;
+  /* Taller to fit content vertically */
+
   --border-width-square: 10px;
   --border-width-main: 10px;
   --text-large: 16px;
@@ -52,8 +56,9 @@
   --text-square: 22px;
   --text-baswesterweel: 20px;
 
-  --info-image-width: 180px;
-  --info-image-height: 18px;
+  /* Slightly smaller info image */
+  --info-image-width: 160px;
+  --info-image-height: 16px;
 }
 
 /* Tablet breakpoint (768px - 1199px) */
@@ -61,8 +66,10 @@
   :root {
     --width-square-size: 104px;
     --height-square-size: 104px;
-    --width-main-size: max(500px, min(700px, 80vh));
-    --height-main-size: max(500px, min(700px, 80vh));
+
+    /* Fixed Tablet Size */
+    --width-main-size: 550px;
+    --height-main-size: 650px;
 
     --border-width-square: 12px;
     --border-width-main: 12px;
@@ -71,8 +78,10 @@
     --text-small: 13px;
     --text-square: 25px;
     --text-baswesterweel: 28px;
-    --info-image-width: 250px;
-    --info-image-height: 25px;
+
+    /* Slightly smaller info image */
+    --info-image-width: 230px;
+    --info-image-height: 23px;
   }
 }
 
@@ -81,8 +90,10 @@
   :root {
     --width-square-size: 138px;
     --height-square-size: 138px;
-    --width-main-size: max(600px, min(950px, 85vh));
-    --height-main-size: max(600px, min(950px, 85vh));
+
+    /* Fixed Desktop Size */
+    --width-main-size: 700px;
+    --height-main-size: 750px;
 
     --border-width-square: 14px;
     --border-width-main: 14px;
@@ -91,8 +102,10 @@
     --text-small: 15px;
     --text-square: 35px;
     --text-baswesterweel: 36px;
-    --info-image-width: 300px;
-    --info-image-height: 30px;
+
+    /* Slightly smaller info image */
+    --info-image-width: 280px;
+    --info-image-height: 28px;
   }
 }
 
