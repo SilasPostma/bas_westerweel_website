@@ -72,13 +72,13 @@ export default function ProfileCard({
       </div>
 
       <div
-        className="bg-[#EA4025] flex items-center justify-start"
+        className="bg-[#EA4025] flex items-center justify-start pl-4 pr-10 font-bold"
         style={{
           height: "12%",
         }}
       >
         <div
-          className="text-white font-bold transform translate-x-4 leading-tight"
+          className="text-white font-boldleading-tight"
           style={{ fontSize: "var(--text-large)" }}
         >
           {barText}
@@ -116,24 +116,24 @@ export default function ProfileCard({
           {formattedText}
         </p>
       </div>
-      <div
-        className="absolute left-2 z-10"
-        style={{
-          bottom:
-            "calc(var(--border-width-main) + var(--text-medium) * 2.5 + 16px)",
-          width: "calc(var(--width-main-size) * 0.58)",
-          height: "calc(var(--text-medium) * 1.8)",
-        }}
-      >
-        {infoImage && (
+      
+      {infoImage && (
+        <div
+          className="absolute z-10 w-[var(--info-image-width)] h-[var(--info-image-height)]"
+          style={{
+            left: "calc(var(--border-width-main) + 14px)",
+            bottom:
+              "calc(var(--border-width-main) + var(--text-medium) * 2.5)",
+            }}
+        >
           <Image
-            src={infoImage || "/placeholder.svg"}
+            src={infoImage}
             alt="info"
             fill
             style={{ objectFit: "contain" }}
           />
-        )}
-      </div>
+        </div>
+      )}
       <RedButton text={redButtonText} href={redButtonLink}></RedButton>
 
       <div
