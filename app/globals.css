@@ -59,8 +59,8 @@
   --info-image-height: 16px;
 }
 
-/* Tablet breakpoint (500px - 1199px) */
-@media (min-width: 500px) {
+/* Tablet breakpoint (600px - 1199px) */
+@media (min-width: 600px) {
   :root {
     --width-square-size: 104px;
     --height-square-size: 104px;
@@ -90,8 +90,8 @@
     --height-square-size: 138px;
 
     /* Fixed Desktop Size */
-    --width-main-size: 800px;
-    --height-main-size: 800px;
+    --width-main-size: 750px;
+    --height-main-size: 750px;
 
     --border-width-square: 14px;
     --border-width-main: 14px;
