@@ -31,7 +31,7 @@ export default function RedButton({
     transition-colors 
     duration-200 
     font-bold 
-    px-3.5 
+    px-3 
     inline-block
     w-fit
     flex 
