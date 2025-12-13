@@ -86,7 +86,7 @@ export default function ProfileCard({
       </div>
 
       <div
-        className="pl-2 pt-1 pb-8.5 flex flex-col justify-start mb-2"
+        className="pl-[var(--border-width-main)] pt-1 pb-8.5 flex flex-col justify-start mb-2"
         style={{
           height: "44%",
           paddingRight: "calc(var(--width-square-size) * 0.7)",
