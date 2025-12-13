@@ -62,7 +62,7 @@ export default function ProfileCard({
       }}
     >
       {/* Top half image */}
-      <div className="h-[45%] relative">
+      <div className="h-[44%] relative">
         <Image
           src={image || "/placeholder.svg"}
           alt="top"
@@ -74,8 +74,7 @@ export default function ProfileCard({
       <div
         className="bg-[#EA4025] flex items-center justify-start"
         style={{
-          height: barText.length > 50 ? "12%" : "10%",
-          minHeight: "10%",
+          height: "12%",
         }}
       >
         <div
@@ -89,7 +88,7 @@ export default function ProfileCard({
       <div
         className="pl-2 pt-1 pb-8.5 flex flex-col justify-start mb-2"
         style={{
-          height: barText.length > 50 ? "43%" : "45%",
+          height: "44%",
           paddingRight: "calc(var(--width-square-size) * 0.7)",
         }}
       >

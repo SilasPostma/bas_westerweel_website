@@ -38,17 +38,20 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* Breakpoint-based responsive sizing */
-  /* Mobile (default < 768px) */
-  /* Increased square buttons by 15%, set minimum dimensions */
+
   --width-square-size: 92px;
   --height-square-size: 92px;
-  --width-main-size: max(350px, 70vh);
-  --height-main-size: max(350px, 70vh);
-  /* Thicker borders for better visibility */
+
+  --min-viewport-dim: 70vmin; 
+  --width-main-size: var(--min-viewport-dim);
+  --height-main-size: var(--min-viewport-dim);
+  --width-main-size: max(350px, var(--min-viewport-dim));
+  --height-main-size: max(350px, var(--min-viewport-dim));
+
+  /* --width-main-size: max(350px, 70vh);
+  --height-main-size: max(350px, 70vh); */
   --border-width-square: 10px;
   --border-width-main: 10px;
-  /* Smaller BASWESTERWEEL text, adjusted medium text for red button */
   --text-large: 16px;
   --text-medium: 12px;
   --text-small: 11px;
@@ -59,20 +62,19 @@
 /* Tablet breakpoint (768px - 1199px) */
 @media (min-width: 768px) {
   :root {
-    /* Increased square buttons by 15% */
     --width-square-size: 104px;
     --height-square-size: 104px;
-    /* Set minimum dimensions and consider viewport height */
-    --width-main-size: max(500px, min(700px, 80vh));
-    --height-main-size: max(500px, min(700px, 80vh));
-    /* Thicker borders */
+    /* --width-main-size: max(500px, min(700px, 80vh));
+    --height-main-size: max(500px, min(700px, 80vh)); */
+    --min-viewport-dim: 80vmin; 
+    --width-main-size: max(500px, var(--min-viewport-dim));
+    --height-main-size: max(500px, var(--min-viewport-dim));
     --border-width-square: 12px;
     --border-width-main: 12px;
-    /* Smaller BASWESTERWEEL text, adjusted text sizes */
     --text-large: 22px;
-    --text-medium: 15px;
+    --text-medium: 18px;
     --text-small: 13px;
-    --text-square: 30px;
+    --text-square: 25px;
     --text-baswesterweel: 28px;
   }
 }
@@ -80,20 +82,19 @@
 /* Desktop breakpoint (≥1200px) */
 @media (min-width: 1200px) {
   :root {
-    /* Increased square buttons by 15% */
     --width-square-size: 138px;
     --height-square-size: 138px;
-    /* Set minimum dimensions and consider viewport height */
-    --width-main-size: max(600px, min(950px, 85vh));
-    --height-main-size: max(600px, min(950px, 85vh));
-    /* Thicker borders */
+    /* --width-main-size: max(600px, min(950px, 85vh));
+    --height-main-size: max(600px, min(950px, 85vh)); */
+    --min-viewport-dim: 85vmin; 
+    --width-main-size: max(600px, var(--min-viewport-dim));
+    --height-main-size: max(600px, var(--min-viewport-dim));
     --border-width-square: 14px;
     --border-width-main: 14px;
-    /* Smaller BASWESTERWEEL text, adjusted text sizes */
     --text-large: 28px;
-    --text-medium: 18px;
+    --text-medium: 24px;
     --text-small: 15px;
-    --text-square: 40px;
+    --text-square: 35px;
     --text-baswesterweel: 36px;
   }
 }

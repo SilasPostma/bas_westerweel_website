@@ -20,7 +20,7 @@ export default function Home() {
       <div className="flex flex-col items-center gap-6 md:relative md:flex-row md:gap-0 md:items-center md:justify-center">
         <div
           className="block md:hidden self-start"
-          style={{ marginLeft: "var(--border-width-main)" }}
+          style={{ marginLeft: "-var(--border-width-main)" }}
         >
           <div
             className="text-black font-extrabold tracking-tighter cursor-pointer"
