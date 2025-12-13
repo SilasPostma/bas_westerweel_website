@@ -42,14 +42,8 @@
   --width-square-size: 92px;
   --height-square-size: 92px;
 
-  --min-viewport-dim: 70vmin;
-  --width-main-size: var(--min-viewport-dim);
-  --height-main-size: var(--min-viewport-dim);
-  --width-main-size: max(350px, var(--min-viewport-dim));
-  --height-main-size: max(350px, var(--min-viewport-dim));
-
-  /* --width-main-size: max(350px, 70vh);
-  --height-main-size: max(350px, 70vh); */
+  --width-main-size: max(350px, 70vh);
+  --height-main-size: max(350px, 70vh);
   --border-width-square: 10px;
   --border-width-main: 10px;
   --text-large: 16px;
@@ -67,11 +61,9 @@
   :root {
     --width-square-size: 104px;
     --height-square-size: 104px;
-    /* --width-main-size: max(500px, min(700px, 80vh));
-    --height-main-size: max(500px, min(700px, 80vh)); */
-    --min-viewport-dim: 80vmin;
-    --width-main-size: max(500px, var(--min-viewport-dim));
-    --height-main-size: max(500px, var(--min-viewport-dim));
+    --width-main-size: max(500px, min(700px, 80vh));
+    --height-main-size: max(500px, min(700px, 80vh));
+
     --border-width-square: 12px;
     --border-width-main: 12px;
     --text-large: 22px;
@@ -89,11 +81,9 @@
   :root {
     --width-square-size: 138px;
     --height-square-size: 138px;
-    /* --width-main-size: max(600px, min(950px, 85vh));
-    --height-main-size: max(600px, min(950px, 85vh)); */
-    --min-viewport-dim: 85vmin;
-    --width-main-size: max(600px, var(--min-viewport-dim));
-    --height-main-size: max(600px, var(--min-viewport-dim));
+    --width-main-size: max(600px, min(950px, 85vh));
+    --height-main-size: max(600px, min(950px, 85vh));
+
     --border-width-square: 14px;
     --border-width-main: 14px;
     --text-large: 28px;

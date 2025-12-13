@@ -72,13 +72,13 @@ export default function ProfileCard({
       </div>
 
       <div
-        className="bg-[#EA4025] flex items-center justify-start pl-4 pr-10 font-bold"
+        className="bg-[#EA4025] flex items-center justify-start pl-4 pr-10"
         style={{
           height: "12%",
         }}
       >
         <div
-          className="text-white font-boldleading-tight"
+          className="text-white font-bold leading-tight"
           style={{ fontSize: "var(--text-large)" }}
         >
           {barText}
