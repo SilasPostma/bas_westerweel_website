@@ -41,7 +41,7 @@ export default function RedButton({
   `;
 
   const positionStyle = {
-    // left: "var(--border-width-main)",
+    left: "var(--border-width-main)",
     bottom: "var(--border-width-main)",
   };
 

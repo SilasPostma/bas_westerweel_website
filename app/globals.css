@@ -43,10 +43,8 @@
   --width-square-size: 92px;
   --height-square-size: 92px;
 
-  /* Fixed Mobile Size */
   --width-main-size: 350px;
-  --height-main-size: 600px;
-  /* Taller to fit content vertically */
+  --height-main-size: 350px;
 
   --border-width-square: 10px;
   --border-width-main: 10px;
@@ -61,15 +59,15 @@
   --info-image-height: 16px;
 }
 
-/* Tablet breakpoint (768px - 1199px) */
-@media (min-width: 768px) {
+/* Tablet breakpoint (500px - 1199px) */
+@media (min-width: 500px) {
   :root {
     --width-square-size: 104px;
     --height-square-size: 104px;
 
     /* Fixed Tablet Size */
     --width-main-size: 550px;
-    --height-main-size: 650px;
+    --height-main-size: 550px;
 
     --border-width-square: 12px;
     --border-width-main: 12px;
@@ -92,8 +90,8 @@
     --height-square-size: 138px;
 
     /* Fixed Desktop Size */
-    --width-main-size: 700px;
-    --height-main-size: 750px;
+    --width-main-size: 800px;
+    --height-main-size: 800px;
 
     --border-width-square: 14px;
     --border-width-main: 14px;

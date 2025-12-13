@@ -12,11 +12,9 @@ export default function SceneNavigation({
 }: SceneNavigationProps) {
   return (
     /* Positioned buttons to align with right border of main square */
+
     <div
-      className="flex flex-row gap-4 md:absolute md:flex-col md:top-1/2 md:right-0 md:gap-4"
-      style={{
-        transform: "translate(calc(50% - var(--border-width-main) / 2), -50%)",
-      }}
+      className="flex flex-row justify-center gap-4 md:absolute md:flex-col md:top-1/2 md:right-0 md:gap-4 md:-translate-y-1/2 md:translate-x-[calc(50%-(var(--border-width-main)/2))]"
     >
       {buttonConfig.map((config) => (
         <SquareButton
