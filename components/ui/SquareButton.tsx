@@ -1,8 +1,9 @@
+"use client";
+
 interface SquareButtonProps {
   rows: { text: string; align?: "left" | "right" }[];
   onClick?: () => void;
   className?: string;
-  // Added props used by callers in `app/page.tsx`
   sceneId?: string;
   onSceneChange?: (id: string) => void;
   isActive?: boolean;
@@ -32,11 +33,16 @@ export default function SquareButton({
   return (
     <button
       onClick={handleClick}
-      className={`w-square-size h-square-size
-                  border-square ${baseColor} border-[#EA4025]
+      style={{
+        width: "var(--width-square-size)",
+        height: "var(--height-square-size)",
+        borderWidth: "var(--border-width-square)",
+        fontSize: "var(--text-square)",
+      }}
+      className={`border-[#EA4025] ${baseColor} 
                   flex flex-col
                   box-border hover:bg-[#EA4025] hover:text-white transition-colors duration-200
-                   font-extrabold text-square overflow-hidden
+                  font-extrabold overflow-hidden
                   ${className}`}
     >
       {filledRows.map((row, i) => {

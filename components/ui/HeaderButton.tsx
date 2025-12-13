@@ -1,10 +1,12 @@
+"use client";
+
 interface HeaderButtonProps {
-    text: string;
-    onClick?: () => void;
-    className?: string;
-    sceneId?: string;
-    onSceneChange?: (id: string) => void;
-    isActive?: boolean;
+  text: string;
+  onClick?: () => void;
+  className?: string;
+  sceneId?: string;
+  onSceneChange?: (id: string) => void;
+  isActive?: boolean;
 }
 
 export default function HeaderButton({
@@ -27,9 +29,13 @@ export default function HeaderButton({
   return (
     <button
       onClick={handleClick}
+      style={{ fontSize: "var(--text-medium)" }}
       className={`${baseColor}
                 hover:bg-[#EA4025] hover:text-white transition-colors duration-200
-                text-medium font-bold px-1
-                ${className}`}>{text}</button>
+                font-bold px-1
+                ${className}`}
+    >
+      {text}
+    </button>
   );
 }

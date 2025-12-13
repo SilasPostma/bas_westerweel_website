@@ -1,10 +1,7 @@
 
-import ba1 from "../public/ba1.png";
 import ba2 from "../public/ba2.png";
-import ba4 from "../public/ba4.png";
 import ba5 from "../public/ba5.png";
 import ba7 from "../public/ba7.png";
-import ba8 from "../public/ba8.png";
 import info from "../public/info.png";
 
 import AudioVideo from "../public/AudioVideo.png";

@@ -1,3 +1,5 @@
+"use client";
+
 interface RedButtonProps {
   text: string;
   onClick?: () => void;
@@ -13,18 +15,22 @@ export default function RedButton({
 }: RedButtonProps) {
   const textPassed = text == null ? "NO TEXT PASSED" : text;
 
+  const baseStyle = {
+    fontSize: "var(--text-medium)",
+    height: "auto",
+    paddingTop: "0.35rem",
+    paddingBottom: "0.35rem",
+  };
+
   const baseClasses = `
-    absolute bottom-4 left-2 z-10 transform translate-y-1/2
-    text-medium
+    absolute z-10
     bg-[#EA4025] 
     text-white 
-    h-4 
     rounded-full 
     hover:bg-[#c53020] 
     transition-colors 
     duration-200 
     font-bold 
-    fluid-title 
     px-3.5 
     inline-block
     w-fit
@@ -34,10 +40,16 @@ export default function RedButton({
     ${className}
   `;
 
+  const positionStyle = {
+    left: "var(--border-width-main)",
+    bottom: "var(--border-width-main)",
+  };
+
   if (href) {
     return (
       <a
         href={href}
+        style={{ ...baseStyle, ...positionStyle }}
         className={baseClasses}
         target="_blank"
         rel="noopener noreferrer"
@@ -48,7 +60,11 @@ export default function RedButton({
   }
 
   return (
-    <button onClick={onClick} className={baseClasses}>
+    <button
+      onClick={onClick}
+      style={{ ...baseStyle, ...positionStyle }}
+      className={baseClasses}
+    >
       {textPassed}
     </button>
   );

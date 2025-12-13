@@ -1,6 +1,9 @@
-import Image, { StaticImageData } from "next/image";
+"use client";
+
+import Image, { type StaticImageData } from "next/image";
 import RedButton from "../ui/RedButton";
 import HeaderButton from "../ui/HeaderButton";
+import React from "react";
 
 interface ProfileCardProps {
   text: string;
@@ -25,22 +28,71 @@ export default function ProfileCard({
   infoImage,
   barText,
 }: ProfileCardProps) {
+  const [useLineBreaks, setUseLineBreaks] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkSize = () => {
+      setUseLineBreaks(window.innerWidth >= 1200);
+    };
+    checkSize();
+    window.addEventListener("resize", checkSize);
+    return () => window.removeEventListener("resize", checkSize);
+  }, []);
+
+  const formattedText = useLineBreaks
+    ? text
+        .replace(
+          "Over ondernemerschap. Over verschil maken.",
+          "Over ondernemerschap.\n\nOver verschil maken."
+        )
+        .replace("Die momenten en die vragen", "\n\nDie momenten en die vragen")
+        .replace(
+          "Want dat stuk zelfonderzoek",
+          "\n\nWant dat stuk zelfonderzoek"
+        )
+    : text;
+
   return (
-    <div className="relative w-main-size h-main-size border-main border-[#EA4025] flex flex-col box-border">
+    <div
+      className="relative border-[#EA4025] flex flex-col box-border"
+      style={{
+        width: "var(--width-main-size)",
+        height: "var(--height-main-size)",
+        borderWidth: "var(--border-width-main)",
+      }}
+    >
       {/* Top half image */}
       <div className="h-[45%] relative">
-        <Image src={image} alt="top" fill style={{ objectFit: "cover" }} />
+        <Image
+          src={image || "/placeholder.svg"}
+          alt="top"
+          fill
+          style={{ objectFit: "cover" }}
+        />
       </div>
 
-      {/* Red middle bar */}
-      <div className="h-[10%] bg-[#EA4025] flex items-center justify-start ">
-        <div className="text-white text-large font-bold transform translate-x-4">
+      <div
+        className="bg-[#EA4025] flex items-center justify-start"
+        style={{
+          height: barText.length > 50 ? "12%" : "10%",
+          minHeight: "10%",
+        }}
+      >
+        <div
+          className="text-white font-bold transform translate-x-4 leading-tight"
+          style={{ fontSize: "var(--text-large)" }}
+        >
           {barText}
         </div>
       </div>
 
-      {/* Bottom half text */}
-      <div className="h-[45%] pl-2 pt-1 pb-8.5 pr-10flex flex-col justify-start mb-2">
+      <div
+        className="pl-2 pt-1 pb-8.5 flex flex-col justify-start mb-2"
+        style={{
+          height: barText.length > 50 ? "43%" : "45%",
+          paddingRight: "calc(var(--width-square-size) * 0.7)",
+        }}
+      >
         {headerButtons && headerButtons.length > 0 && (
           <div className="flex flex-row gap-2 mb-2">
             {headerButtons.map((btn) => (
@@ -58,18 +110,26 @@ export default function ProfileCard({
           <div className="mt-[23px]"></div>
         )}
 
-        {/* <p className="text-[#EA4025] font-extrabold text-large mb-1">
-          Wie ben ik dan?
-        </p> */}
-        <p className="text-gray-700 text-small pr-15 whitespace-pre-wrap overflow-hidden">
-          {text}
+        <p
+          className="text-gray-700 whitespace-pre-wrap overflow-hidden leading-relaxed"
+          style={{ fontSize: "var(--text-small)" }}
+        >
+          {formattedText}
         </p>
       </div>
-      <div className="absolute bottom-10 left-2 z-10 transform translate-y-1/2 w-52.5 h-7.5">
+      <div
+        className="absolute left-2 z-10"
+        style={{
+          bottom:
+            "calc(var(--border-width-main) + var(--text-medium) * 2.5 + 16px)",
+          width: "calc(var(--width-main-size) * 0.58)",
+          height: "calc(var(--text-medium) * 1.8)",
+        }}
+      >
         {infoImage && (
           <Image
-            src={infoImage}
-            alt="top"
+            src={infoImage || "/placeholder.svg"}
+            alt="info"
             fill
             style={{ objectFit: "contain" }}
           />
@@ -77,13 +137,17 @@ export default function ProfileCard({
       </div>
       <RedButton text={redButtonText} href={redButtonLink}></RedButton>
 
-      {/* Text under square */}
       <div
-        className="absolute -left-2 -bottom-3 z-0"
-        style={{ transform: "translateY(100%)" }}
+        className="hidden md:block absolute z-0"
+        style={{
+          left: "var(--border-width-main)",
+          bottom: 0,
+          transform: "translateY(calc(100% + var(--border-width-main)))",
+        }}
       >
         <div
-          className={`text-black font-extrabold text-xl tracking-tighter cursor-pointer`}
+          className="text-black font-extrabold tracking-tighter cursor-pointer"
+          style={{ fontSize: "var(--text-baswesterweel)" }}
           onClick={() => onSceneChange("home")}
         >
           BASWESTERWEEL

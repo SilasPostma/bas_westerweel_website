@@ -1,10 +1,10 @@
+import type React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Bas Westerweel",
-  description:
-    "Storyteller and coach dedicated to helping individuals and organizations find their authentic voice.",
+  description: "BESCHRIJVING",
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`font-sans antialiased`}>{children}</body>
     </html>
   );
 }

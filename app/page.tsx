@@ -16,8 +16,21 @@ export default function Home() {
   const currentScene = scenes[activeScene];
 
   return (
-    <main className="min-h-screen bg-white flex items-center justify-center flex-col space-y-10 relative">
-      <div className="relative flex items-center justify-center">
+    <main className="min-h-screen bg-white flex items-center justify-center p-4">
+      <div className="flex flex-col items-center gap-6 md:relative md:flex-row md:gap-0 md:items-center md:justify-center">
+        <div
+          className="block md:hidden self-start"
+          style={{ marginLeft: "var(--border-width-main)" }}
+        >
+          <div
+            className="text-black font-extrabold tracking-tighter cursor-pointer"
+            style={{ fontSize: "var(--text-baswesterweel)" }}
+            onClick={() => setScene("home")}
+          >
+            BASWESTERWEEL
+          </div>
+        </div>
+
         <ProfileCard
           text={currentScene.text}
           redButtonLink={currentScene.redButtonLink}
@@ -29,6 +42,7 @@ export default function Home() {
           infoImage={currentScene.infoImage}
           barText={currentScene.barText}
         />
+
         <SceneNavigation activeScene={activeScene} onSceneChange={setScene} />
       </div>
     </main>
