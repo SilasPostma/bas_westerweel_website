@@ -43,8 +43,10 @@
   --width-square-size: 92px;
   --height-square-size: 92px;
 
+  --top_img_height: 30%;
+
   --width-main-size: 350px;
-  --height-main-size: 350px;
+  --height-main-size: 450px;
 
   --border-width-square: 10px;
   --border-width-main: 10px;
@@ -66,6 +68,8 @@
   :root {
     --width-square-size: 104px;
     --height-square-size: 104px;
+
+    --top_img_height: 44%;
 
     /* Fixed Tablet Size */
     --width-main-size: 550px;
@@ -93,6 +97,9 @@
   :root {
     --width-square-size: 138px;
     --height-square-size: 138px;
+
+    --top_img_height: 44%;
+
 
     /* Fixed Desktop Size */
     --width-main-size: 750px;

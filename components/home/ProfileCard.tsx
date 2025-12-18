@@ -62,7 +62,7 @@ export default function ProfileCard({
       }}
     >
       {/* Top half image */}
-      <div className="h-[44%] relative">
+      <div className="h-(--top_img_height) relative">
         <Image
           src={image || "/placeholder.svg"}
           alt="top"
@@ -89,7 +89,7 @@ export default function ProfileCard({
         className="pl-(--border-width-main) pt-1 pb-2 flex flex-col justify-start mb-2"
         style={{
           /* Height reduced to prevent overlap with bottom elements (RedButton/InfoImage) */
-          height: "calc(44% - 80px)",
+          height: "calc(88% - var(--top_img_height) - 80px)",
           paddingRight: "calc(var(--width-square-size) * 0.7)",
         }}
       >
