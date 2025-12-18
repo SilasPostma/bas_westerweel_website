@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Bas Westerweel",
-  description: "BESCHRIJVING",
+  description: "COACH | TRAINER | SPEAKER",
 };
 
 export default function RootLayout({
