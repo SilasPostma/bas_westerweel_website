@@ -1,5 +1,7 @@
 "use client";
 
+import React, { useState } from "react";
+
 interface RedButtonProps {
   text: string;
   onClick?: () => void;
@@ -13,6 +15,22 @@ export default function RedButton({
   className = "",
   href,
 }: RedButtonProps) {
+  const [copied, setCopied] = useState(false);
+
+  const handleMailClick = async (e: React.MouseEvent) => {
+    const email = "bas@baswesterweel.com";
+    if (href === `mailto:${email}`) {
+      try {
+        await navigator.clipboard.writeText(email);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      } catch (err) {
+        console.error("Kon het email adres niet kopiëren:", err);
+      }
+    }
+    if (onClick) onClick();
+  };
+
   const textPassed = text == null ? "NO TEXT PASSED" : text;
 
   const baseStyle = {
@@ -51,10 +69,11 @@ export default function RedButton({
         href={href}
         style={{ ...baseStyle, ...positionStyle }}
         className={baseClasses}
-        target="_blank"
+        onClick={handleMailClick}
+        target={href.startsWith("mailto:") ? undefined : "_blank"}
         rel="noopener noreferrer"
       >
-        {textPassed}
+        {copied ? "EMAIL GEKOPIEËRD!" : textPassed}
       </a>
     );
   }
