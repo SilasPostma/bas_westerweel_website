@@ -72,7 +72,7 @@ export default function ProfileCard({
       </div>
 
       <div
-        className="bg-[#EA4025] flex items-center justify-start pl-4 pr-10"
+        className="bg-[#EA4025] flex items-center justify-start pl-4 pr-(--padding_bar)"
         style={{
           height: "12%",
         }}
@@ -86,7 +86,7 @@ export default function ProfileCard({
       </div>
 
       <div
-        className="pl-[var(--border-width-main)] pt-1 pb-8.5 flex flex-col justify-start mb-2"
+        className="pl-(--border-width-main) pt-1 pb-8.5 flex flex-col justify-start mb-2"
         style={{
           /* Height reduced to prevent overlap with bottom elements (RedButton/InfoImage) */
           height: "calc(44% - 80px)",
@@ -117,16 +117,15 @@ export default function ProfileCard({
           {formattedText}
         </p>
       </div>
-      
+
       {infoImage && (
         <div
-          className="absolute z-10 w-[var(--info-image-width)] h-[var(--info-image-height)]"
+          className="absolute z-10 w-(--info-image-width) h-(--info-image-height)"
           style={{
             /* Left offset = border-width + button padding (12px/0.75rem for px-3) */
             left: "calc(var(--border-width-main) + 12px)",
-            bottom:
-              "calc(var(--border-width-main) + var(--text-medium) * 2.5)",
-            }}
+            bottom: "calc(var(--border-width-main) + var(--text-medium) * 2.5)",
+          }}
         >
           <Image
             src={infoImage}

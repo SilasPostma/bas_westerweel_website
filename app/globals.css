@@ -48,19 +48,21 @@
 
   --border-width-square: 10px;
   --border-width-main: 10px;
-  --text-large: 16px;
-  --text-medium: 12px;
-  --text-small: 11px;
+  --text-large: 12px;
+  --text-medium: 11px;
+  --text-small: 10px;
   --text-square: 22px;
   --text-baswesterweel: 20px;
 
   /* Slightly smaller info image */
   --info-image-width: 160px;
   --info-image-height: 16px;
+
+  --padding_bar: 16px
 }
 
-/* Tablet breakpoint (600px - 1199px) */
-@media (min-width: 600px) {
+/* Tablet breakpoint (780px - 1199px) */
+@media (min-width: 780px) {
   :root {
     --width-square-size: 104px;
     --height-square-size: 104px;
@@ -80,6 +82,9 @@
     /* Slightly smaller info image */
     --info-image-width: 230px;
     --info-image-height: 23px;
+
+      --padding_bar: 60px
+
   }
 }
 
@@ -104,6 +109,9 @@
     /* Slightly smaller info image */
     --info-image-width: 280px;
     --info-image-height: 28px;
+
+      --padding_bar: 80px
+
   }
 }
 
