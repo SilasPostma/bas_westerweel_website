@@ -86,7 +86,7 @@ export default function ProfileCard({
       </div>
 
       <div
-        className="pl-(--border-width-main) pt-1 pb-8.5 flex flex-col justify-start mb-2"
+        className="pl-(--border-width-main) pt-1 pb-2 flex flex-col justify-start mb-2"
         style={{
           /* Height reduced to prevent overlap with bottom elements (RedButton/InfoImage) */
           height: "calc(44% - 80px)",
@@ -94,7 +94,7 @@ export default function ProfileCard({
         }}
       >
         {headerButtons && headerButtons.length > 0 && (
-          <div className="flex flex-row gap-2 mb-2 items-center">
+          <div className="flex flex-row gap-2 items-center">
             {headerButtons.map((btn) => (
               <HeaderButton
                 key={btn.text}
