@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white flex items-center justify-center p-4">
-      <div className="flex flex-col items-center gap-6 md:relative md:flex-row md:gap-0 md:items-center md:justify-center">
+      <div className="flex flex-col items-center gap-4 md:relative md:flex-row md:gap-0 md:items-center md:justify-center">
         <div
           className="block md:hidden self-start"
           style={{ marginLeft: "-var(--border-width-main)" }}
