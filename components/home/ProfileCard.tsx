@@ -140,7 +140,7 @@ export default function ProfileCard({
       <div
         className="hidden md:block absolute z-0"
         style={{
-          left: "var(--border-width-main)",
+          left: "calc(-0.5 * var(--border-width-main))",
           bottom: 0,
           transform: "translateY(calc(100% + var(--border-width-main)))",
         }}

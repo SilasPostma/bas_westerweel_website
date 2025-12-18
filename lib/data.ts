@@ -29,7 +29,7 @@ export const scenes = {
     barText: "Ik hou van persoonlijke gesprekken. Ik hoor het u denken."
   },
   "trainer_manifesto": {
-    text: `Elke dag trekken we massaal naar ons werk om iet te presteren. Maar zeker in deze turbulente tijden komt de vraag steeds meer naar boven. Waarheen? Waarvoor? We voelen het wel maar zijn er vaak onvoldoende duidelijk over. Na deze sessie is dat verleden tijd. Samen schrijven wij een kort manifesto met onze purpose, principes en waarden. De voorwaarden waaronder wij maar ook onze klanten succesvol willen zijn`,
+    text: `Elke dag trekken we massaal naar ons werk om iet te presteren. Maar zeker in deze turbulente tijden komt de vraag steeds meer naar boven. Waarheen? Waarvoor? We voelen het wel maar zijn er vaak onvoldoende duidelijk over. Na deze sessie is dat verleden tijd. Samen schrijven wij een kort manifesto met onze purpose, principes en waarden. De voorwaarden waaronder wij maar ook onze klanten succesvol willen zijn.`,
     redButtonText: "IK GEEF JE GRAAG WAT MEER INFO",
     redButtonLink: "mailto:bas@baswesterweel.com", // FIXME
     image: Manifesto,
