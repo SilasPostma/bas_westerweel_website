@@ -61,8 +61,8 @@
   --padding_bar: 16px
 }
 
-/* Tablet breakpoint (780px - 1199px) */
-@media (min-width: 780px) {
+/* Tablet breakpoint (767px - 1199px) */
+@media (min-width: 767px) {
   :root {
     --width-square-size: 104px;
     --height-square-size: 104px;
