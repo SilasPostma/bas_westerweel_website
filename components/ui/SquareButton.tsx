@@ -42,7 +42,7 @@ export default function SquareButton({
       className={`border-[#EA4025] ${baseColor} 
                   flex flex-col
                   box-border hover:bg-[#EA4025] hover:text-white transition-colors duration-200
-                  font-extrabold overflow-hidden
+                  font-extrabold overflow-hidden no-aliasing
                   ${className}`}
     >
       {filledRows.map((row, i) => {

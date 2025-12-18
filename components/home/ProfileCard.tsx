@@ -72,7 +72,7 @@ export default function ProfileCard({
       </div>
 
       <div
-        className="bg-[#EA4025] flex items-center justify-start pl-4 pr-(--padding_bar)"
+        className="bg-[#EA4025] flex items-center justify-start pl-4 pr-(--padding_bar) no-aliasing"
         style={{
           height: "12%",
         }}
