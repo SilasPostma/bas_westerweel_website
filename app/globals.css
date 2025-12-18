@@ -44,6 +44,7 @@
   --height-square-size: 92px;
 
   --top_img_height: 30%;
+  --padding: var(--border-width-main);
 
   --width-main-size: 350px;
   --height-main-size: 425px;
@@ -51,14 +52,14 @@
   --border-width-square: 10px;
   --border-width-main: 10px;
   --text-large: 12px;
-  --text-medium: 10px;
-  --text-small: 9px;
+  --text-medium: 11px;
+  --text-small: 10px;
   --text-square: 22px;
   --text-baswesterweel: 20px;
 
   /* Slightly smaller info image */
-  --info-image-width: 120px;
-  --info-image-height: 12px;
+  --info-image-width: 150px;
+  --info-image-height: 15px;
 
   --padding_bar: 16px
 }
@@ -70,6 +71,7 @@
     --height-square-size: 104px;
 
     --top_img_height: 44%;
+    --padding: calc(var(--width-square-size) * 0.7)
 
     /* Fixed Tablet Size */
     --width-main-size: 550px;
@@ -99,7 +101,7 @@
     --height-square-size: 138px;
 
     --top_img_height: 44%;
-
+    --padding: calc(var(--width-square-size) * 0.7)
 
     /* Fixed Desktop Size */
     --width-main-size: 750px;
