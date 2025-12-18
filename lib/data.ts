@@ -42,7 +42,7 @@ export const scenes = {
     barText: "Waar sta jij voor? Wat drijft jou? Waar wil je heen?"
   },
   "trainer_spreekkuur": {
-    text: `Je stem is één van je grootste krachten om te verbinden en om je te uiten maar we trainen die stem maar zelden.\nIn een Spreekkuur maak ik je bewust van je eigen stem. Letterlijk en figuurlijk, zodat jij verhalen en presentatie kunt geven die het verschil maken en onthouden worden.\nIedereen kan uiteindelijk sprekend zichzelf zijn.`,
+    text: `Je stem is één van je grootste krachten om te verbinden en om je te uiten maar we trainen die stem maar zelden.\n\nIn een Spreekkuur maak ik je bewust van je eigen stem. Letterlijk en figuurlijk, zodat jij verhalen en presentatie kunt geven die het verschil maken en onthouden worden.\n\nIedereen kan uiteindelijk sprekend zichzelf zijn.`,
     redButtonText: "IK GEEF JE GRAAG WAT MEER INFO",
     redButtonLink: "mailto:bas@baswesterweel.com", // FIXME
     image: ba2,
@@ -68,7 +68,7 @@ export const scenes = {
     barText: "De kunst van met elkaar écht in gesprek gaan."
   },
   "presentator_podcast": {
-    text: `Samen aan tafel in een donkere studio, voorover leunend, mond bijna tegen de microfoon aan. Écht luisteren, échte gesprekken, échte verhalen maken.\n\nIk vond het als radiomaker altijd al fascinerend en dat vind als podcastmakers ook. Een podcasts is n mijn ogen en vooral oren, radio in optima forma.`,
+    text: `Samen aan tafel in een donkere studio, voorover leunend, mond bijna tegen de microfoon aan. Écht luisteren, échte gesprekken, échte verhalen maken.\n\nIk vond het als radiomaker altijd al fascinerend en dat vind als podcastmakers ook. Een podcasts is in mijn ogen en vooral oren, radio in optima forma.`,
     redButtonText: "LUISTER DE PODCAST",
     redButtonLink: "https://open.spotify.com/show/6r9qdWjG0oYnbgMx00qBsf",
     image: ba5, //MIST
@@ -80,7 +80,7 @@ export const scenes = {
     barText: "Geluid prikkelt je voorstellingsvermogen."
   },
   "presentator_dagvoorzitter": {
-    text: `Voor een camera in een studio staan vind ik minder leuk dan voor publiek tijdens een congres of bijeenkomst. Daar gebeurd altijd het onverwachte, daar hou ik van, dat zoek ik op. Interactie, plotselinge inzichten en vaak een lach en soms ook een traan.\nDat maakt iedere live bijeenkomst zo uniek.\n\nAls moderator wil ik de de sprekers laten stralen en hen een zaal te brengen waar het verhaal impact kan maken.`,
+    text: `Voor een camera in een studio staan vind ik minder leuk dan voor publiek tijdens een congres of bijeenkomst.\nDaar gebeurd altijd het onverwachte, daar hou ik van, dat zoek ik op. Interactie, plotselinge inzichten en vaak een lach en soms ook een traan.\n\nDat maakt iedere live bijeenkomst zo uniek.\n\nAls moderator wil ik de de sprekers laten stralen en hen een zaal te brengen waar het verhaal impact kan maken.`,
     redButtonText: "CHECK MIJN BESCHIKBAARHEID",
     redButtonLink: "https://www.hetsprekersburo.nl/dagvoorzitters/bas-westerweel", 
     image: Dagvoorzitter,
