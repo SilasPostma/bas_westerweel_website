@@ -44,18 +44,22 @@ export default function ProfileCard({
         // HOME
         .replace("Uit mensen. Ik werkte", "Uit mensen.\n\nIk werkte")
         .replace("agency. Overal", "agency.\n\nOveral")
-        .replace("maken. Het", "maken.\n\nHet")
+        // .replace("maken. Het", "maken.\n\nHet")
+
+        // COACH
+        .replace(
+          "Want dat stuk zelfonderzoek",
+          "\n\nWant dat stuk zelfonderzoek"
+        )
+        // .replace("Die momenten en die vragen", "\n\nDie momenten en die vragen")
 
         // TRAINER_MANIFESTO
         .replace("boven.\nWaarheen?", "boven.\n\nWaarheen?")
         .replace("Waarvoor? We", "Waarvoor?\n\nWe")
         .replace("tijd. Samen", " tijd.\n\nSamen")
 
-        .replace("Die momenten en die vragen", "\n\nDie momenten en die vragen")
-        .replace(
-          "Want dat stuk zelfonderzoek",
-          "\n\nWant dat stuk zelfonderzoek"
-        )
+        // PRESENTER_DAGVOORZITTER
+        .replace("bijeenkomst.\nDaar", "bijeenkomst.\n\nDaar")
     : text;
 
   return (

@@ -13,7 +13,7 @@ import Reflexor from "../public/Reflexor.png";
 export const scenes = {
 
   "home": {
-    text: "Altijd verbindend. Soms wat rusteloos omdat ik er alles uit wil halen. Uit partnerships, vriendschappen, organisaties. Uit mensen. Ik werkte op zeer diverse plekken van radio tot tv studio, was directeur van een dierentuin, zanger in de band en mede oprichter van een succesvol agency. Overal nam ik wijze lessen mee. Over ondernemerschap. Over verschil maken. Het was er altijd al maar na een hartaanval 8 jaar geleden was de omslag om me volledig te geven om mens en organisaties niet alleen goed, of groots maar vooral ook genereus te maken.",
+    text: "Altijd verbindend. Soms wat rusteloos omdat ik er alles uit wil halen. Uit partnerships, vriendschappen, organisaties. Uit mensen. Ik werkte op zeer diverse plekken van radio tot tv studio, was directeur van een dierentuin, zanger in de band en mede oprichter van een succesvol agency. Overal nam ik wijze lessen mee. Over ondernemerschap. Over verschil maken.\n\nHet was er altijd al, maar na een hartaanval 8 jaar geleden was de omslag om me volledig te geven om mens en organisaties niet alleen goed, of groots maar vooral ook genereus te maken.",
     redButtonText: "CONTACT MIJ",
     image: ba7,
     redButtonLink: "mailto:bas@baswesterweel.com", // FIXME
@@ -21,7 +21,7 @@ export const scenes = {
     barText: "Als ik naar mezelf (probeer te) kijken. Wie ben ik dan?"
   },
   "coach": {
-    text: `Overal bij horen en toch alleen zijn. Het overkomt ons allemaal. En dan zijn er vragen. Veel vragen die onzekerheden aanwakkeren. Die momenten en die vragen kunnen we gebruiken als bouwstenen om te groeien.\n\nIk luister, ik reflecteer, ik prikkel en inspireer. Want dat stuk zelfonderzoek, dat doe je het beste samen.`,
+    text: `Overal bij horen en toch alleen zijn. Het overkomt ons allemaal. En dan zijn er vragen. Veel vragen die onzekerheden aanwakkeren.\n\nDie momenten en die vragen kunnen we gebruiken als bouwstenen om te groeien.\n\nIk luister, ik reflecteer, ik prikkel en inspireer. Want dat stuk zelfonderzoek, dat doe je het beste samen.`,
     redButtonText: "MIJN JOURNEY",
     image: coach,
     redButtonLink: "https://www.linkedin.com/in/baswesterweel/",
@@ -55,7 +55,7 @@ export const scenes = {
     barText: "Hoe raak je je publiek met jouw verhaal op jouw manier?"
   },
   "trainer_reflexor": {
-    text: `De mens is een groepsdier en we kruipen in organisaties dus vaak naar elkaar toe in talloze meetings. Daarin willen we gehoord worden.\n\nGezien worden.\n\nDaarbij ontkomen we niet aan interpretatie en oordeel. Als je je daarvan bewust bent, kunnen bijeenkomsten plekken worden waar verandering en groei op een ander manier to stand komt.`,
+    text: `De mens is een groepsdier en we kruipen in organisaties dus vaak naar elkaar toe in talloze meetings. Daarin willen we gehoord worden.\n\nGezien worden. Daarbij ontkomen we niet aan interpretatie en oordeel.\n\nAls je je daarvan bewust bent, kunnen bijeenkomsten plekken worden waar verandering en groei op een ander manier to stand komt.`,
     redButtonText: "IK GEEF JE GRAAG WAT MEER INFO",
     redButtonLink: "mailto:bas@baswesterweel.com", // FIXME
     image: Reflexor,
