@@ -114,7 +114,7 @@ export default function ProfileCard({
           className="text-gray-700 whitespace-pre-wrap overflow-hidden leading-relaxed"
           style={{ fontSize: "var(--text-small)" }}
         >
-          {formattedText}
+          {text}
         </p>
       </div>
 

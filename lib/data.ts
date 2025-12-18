@@ -21,7 +21,7 @@ export const scenes = {
     barText: "Als ik naar mezelf (probeer te) kijken. Wie ben ik dan?"
   },
   "coach": {
-    text: `Overal bij horen en toch alleen zijn. Het overkomt ons allemaal. En dan zijn er vragen. Veel vragen die onzekerheden aanwakkeren. Die momenten en die vragen kunnen we gebruiken als bouwstenen om te groeien. Ik luister, ik reflecteer, ik prikkel en inspireer. Want dat stuk zelfonderzoek, dat doe je het beste samen.`,
+    text: `Overal bij horen en toch alleen zijn. Het overkomt ons allemaal. En dan zijn er vragen. Veel vragen die onzekerheden aanwakkeren. Die momenten en die vragen kunnen we gebruiken als bouwstenen om te groeien.\n\nIk luister, ik reflecteer, ik prikkel en inspireer. Want dat stuk zelfonderzoek, dat doe je het beste samen.`,
     redButtonText: "MIJN JOURNEY",
     image: coach,
     redButtonLink: "https://www.linkedin.com/in/baswesterweel/",
@@ -29,7 +29,7 @@ export const scenes = {
     barText: "Ik hou van persoonlijke gesprekken. Ik hoor het u denken."
   },
   "trainer_manifesto": {
-    text: `Elke dag trekken we massaal naar ons werk om iet te presteren. Maar zeker in deze turbulente tijden komt de vraag steeds meer naar boven. Waarheen? Waarvoor? We voelen het wel maar zijn er vaak onvoldoende duidelijk over. Na deze sessie is dat verleden tijd. Samen schrijven wij een kort manifesto met onze purpose, principes en waarden. De voorwaarden waaronder wij maar ook onze klanten succesvol willen zijn.`,
+    text: `Elke dag trekken we massaal naar ons werk om iet te presteren. Maar zeker in deze turbulente tijden komt de vraag steeds meer naar boven.\nWaarheen? Waarvoor? We voelen het wel maar zijn er vaak onvoldoende duidelijk over. Na deze sessie is dat verleden tijd. Samen schrijven wij een kort manifesto met onze purpose, principes en waarden. De voorwaarden waaronder wij maar ook onze klanten succesvol willen zijn.`,
     redButtonText: "IK GEEF JE GRAAG WAT MEER INFO",
     redButtonLink: "mailto:bas@baswesterweel.com", // FIXME
     image: Manifesto,
@@ -42,7 +42,7 @@ export const scenes = {
     barText: "Waar sta jij voor? Wat drijft jou? Waar wil je heen?"
   },
   "trainer_spreekkuur": {
-    text: `Je stem is één van je grootste krachten om te verbinden en om je te uiten maar we trainen die stem maar zelden. In een Spreekkuur maak ik je bewust van je eigen stem. Letterlijk en figuurlijk, zodat jij verhalen en presentatie kunt geven die het verschil maken en onthouden worden. Iedereen kan uiteindelijk sprekend zichzelf zijn.`,
+    text: `Je stem is één van je grootste krachten om te verbinden en om je te uiten maar we trainen die stem maar zelden.\nIn een Spreekkuur maak ik je bewust van je eigen stem. Letterlijk en figuurlijk, zodat jij verhalen en presentatie kunt geven die het verschil maken en onthouden worden.\nIedereen kan uiteindelijk sprekend zichzelf zijn.`,
     redButtonText: "IK GEEF JE GRAAG WAT MEER INFO",
     redButtonLink: "mailto:bas@baswesterweel.com", // FIXME
     image: ba2,
@@ -55,7 +55,7 @@ export const scenes = {
     barText: "Hoe raak je je publiek met jouw verhaal op jouw manier?"
   },
   "trainer_reflexor": {
-    text: `De mens is een groepsdier en we kruipen in organisaties dus vaak naar elkaar toe in talloze meetings. Daarin willen we gehoord worden. Gezien worden. Daarbij ontkomen we niet aan interpretatie en oordeel. Als je je daarvan bewust bent, kunnen bijeenkomsten plekken worden waar verandering en groei op een ander manier to stand komt.`,
+    text: `De mens is een groepsdier en we kruipen in organisaties dus vaak naar elkaar toe in talloze meetings. Daarin willen we gehoord worden. Gezien worden.\n\nDaarbij ontkomen we niet aan interpretatie en oordeel. Als je je daarvan bewust bent, kunnen bijeenkomsten plekken worden waar verandering en groei op een ander manier to stand komt.`,
     redButtonText: "IK GEEF JE GRAAG WAT MEER INFO",
     redButtonLink: "mailto:bas@baswesterweel.com", // FIXME
     image: Reflexor,
@@ -68,7 +68,7 @@ export const scenes = {
     barText: "De kunst van met elkaar écht in gesprek gaan."
   },
   "presentator_podcast": {
-    text: `Samen aan tafel in een donkere studio, voorover leunend, mond bijna tegen de microfoon aan. Écht luisteren, échte gesprekken, échte verhalen maken. Ik vond het als radiomaker altijd al fascinerend en dat vind als podcastmakers ook. Een podcasts is n mijn ogen en vooral oren, radio in optima forma.`,
+    text: `Samen aan tafel in een donkere studio, voorover leunend, mond bijna tegen de microfoon aan. Écht luisteren, échte gesprekken, échte verhalen maken.\n\nIk vond het als radiomaker altijd al fascinerend en dat vind als podcastmakers ook. Een podcasts is n mijn ogen en vooral oren, radio in optima forma.`,
     redButtonText: "LUISTER DE PODCAST",
     redButtonLink: "https://open.spotify.com/show/6r9qdWjG0oYnbgMx00qBsf",
     image: ba5, //MIST
@@ -80,7 +80,7 @@ export const scenes = {
     barText: "Geluid prikkelt je voorstellingsvermogen."
   },
   "presentator_dagvoorzitter": {
-    text: `Voor een camera in een studio staan vind ik minder leuk dan voor publiek tijdens een congres of bijeenkomst. Daar gebeurd altijd het onverwachte, daar hou ik van, dat zoek ik op. Interactie, plotselinge inzichten en vaak een lach en soms ook een traan.  Dat maakt iedere live bijeenkomst zo uniek. Als moderator wil ik de de sprekers laten stralen en hen een zaal te brengen waar het verhaal impact kan maken.`,
+    text: `Voor een camera in een studio staan vind ik minder leuk dan voor publiek tijdens een congres of bijeenkomst. Daar gebeurd altijd het onverwachte, daar hou ik van, dat zoek ik op. Interactie, plotselinge inzichten en vaak een lach en soms ook een traan.\nDat maakt iedere live bijeenkomst zo uniek.\n\nAls moderator wil ik de de sprekers laten stralen en hen een zaal te brengen waar het verhaal impact kan maken.`,
     redButtonText: "CHECK MIJN BESCHIKBAARHEID",
     redButtonLink: "https://www.hetsprekersburo.nl/dagvoorzitters/bas-westerweel", 
     image: Dagvoorzitter,
@@ -92,7 +92,7 @@ export const scenes = {
     barText: "Op het podium voel ik me op mijn gemak. Ik weet haast niet beter."
   },
   "presentator_audio_video": {
-    text: `Steeds opnieuw achter een microfoon in een studio  kruipen en het werk van een ander mogen inspreken is heerlijk. Een verhaal van een schrijver stem mogen geven is bijzonder. Vooral als mijn stem het verhaal past en het verhaal mijn stem. `,
+    text: `Steeds opnieuw achter een microfoon in een studio  kruipen en het werk van een ander mogen inspreken is heerlijk.\n\nEen verhaal van een schrijver stem mogen geven is bijzonder.\n\nVooral als mijn stem het verhaal past en het verhaal mijn stem. `,
     redButtonText: "CONTACT DE STUDIO",
     redButtonLink: "https://www.storytel.com/nl/narrators/bas-westerweel-71077",
     image: AudioVideo,
