@@ -94,7 +94,7 @@ export default function ProfileCard({
         }}
       >
         {headerButtons && headerButtons.length > 0 && (
-          <div className="flex flex-row gap-2 items-center">
+          <div className="flex flex-row gap-2 mb-2 items-center">
             {headerButtons.map((btn) => (
               <HeaderButton
                 key={btn.text}

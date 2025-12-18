@@ -49,14 +49,14 @@
   --border-width-square: 10px;
   --border-width-main: 10px;
   --text-large: 12px;
-  --text-medium: 11px;
-  --text-small: 10px;
+  --text-medium: 10px;
+  --text-small: 6px;
   --text-square: 22px;
   --text-baswesterweel: 20px;
 
   /* Slightly smaller info image */
-  --info-image-width: 160px;
-  --info-image-height: 16px;
+  --info-image-width: 120px;
+  --info-image-height: 12px;
 
   --padding_bar: 16px
 }
@@ -73,15 +73,15 @@
 
     --border-width-square: 12px;
     --border-width-main: 12px;
-    --text-large: 22px;
-    --text-medium: 17px;
-    --text-small: 13px;
+    --text-large: 21px;
+    --text-medium: 17.5px;
+    --text-small: 10.5px;
     --text-square: 25px;
     --text-baswesterweel: 28px;
 
     /* Slightly smaller info image */
-    --info-image-width: 230px;
-    --info-image-height: 23px;
+    --info-image-width: 180px;
+    --info-image-height: 18px;
 
       --padding_bar: 60px
 
@@ -100,15 +100,15 @@
 
     --border-width-square: 14px;
     --border-width-main: 14px;
-    --text-large: 28px;
-    --text-medium: 24px;
-    --text-small: 15px;
+    --text-large: 24px;
+    --text-medium: 20px;
+    --text-small: 12px;
     --text-square: 35px;
     --text-baswesterweel: 36px;
 
     /* Slightly smaller info image */
-    --info-image-width: 280px;
-    --info-image-height: 28px;
+    --info-image-width: 220px;
+    --info-image-height: 22px;
 
       --padding_bar: 80px
 

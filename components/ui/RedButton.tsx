@@ -18,8 +18,8 @@ export default function RedButton({
   const baseStyle = {
     fontSize: "var(--text-medium)",
     height: "auto",
-    paddingTop: "0.35rem",
-    paddingBottom: "0.35rem",
+    paddingTop: "0.2rem",
+    paddingBottom: "0.2rem",
   };
 
   const baseClasses = `
