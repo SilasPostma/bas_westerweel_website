@@ -41,10 +41,16 @@ export default function ProfileCard({
 
   const formattedText = useLineBreaks
     ? text
-        .replace(
-          "Over ondernemerschap. Over verschil maken.",
-          "Over ondernemerschap.\n\nOver verschil maken."
-        )
+        // HOME
+        .replace("Uit mensen. Ik werkte", "Uit mensen.\n\nIk werkte")
+        .replace("agency. Overal", "agency.\n\nOveral")
+        .replace("maken. Het", "maken.\n\nHet")
+
+        // TRAINER_MANIFESTO
+        .replace("boven.\nWaarheen?", "boven.\n\nWaarheen?")
+        .replace("Waarvoor? We", "Waarvoor?\n\nWe")
+        .replace("tijd. Samen", " tijd.\n\nSamen")
+
         .replace("Die momenten en die vragen", "\n\nDie momenten en die vragen")
         .replace(
           "Want dat stuk zelfonderzoek",
@@ -114,7 +120,7 @@ export default function ProfileCard({
           className="text-gray-700 whitespace-pre-wrap overflow-hidden leading-relaxed"
           style={{ fontSize: "var(--text-small)" }}
         >
-          {text}
+          {formattedText}
         </p>
       </div>
 

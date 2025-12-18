@@ -29,7 +29,7 @@ export const scenes = {
     barText: "Ik hou van persoonlijke gesprekken. Ik hoor het u denken."
   },
   "trainer_manifesto": {
-    text: `Elke dag trekken we massaal naar ons werk om iet te presteren. Maar zeker in deze turbulente tijden komt de vraag steeds meer naar boven.\nWaarheen? Waarvoor? We voelen het wel maar zijn er vaak onvoldoende duidelijk over. Na deze sessie is dat verleden tijd. Samen schrijven wij een kort manifesto met onze purpose, principes en waarden. De voorwaarden waaronder wij maar ook onze klanten succesvol willen zijn.`,
+    text: `Elke dag trekken we massaal naar ons werk om iet te presteren. Maar zeker in deze turbulente tijden komt de vraag steeds meer naar boven.\nWaarheen? Waarvoor? We voelen het wel maar zijn er vaak onvoldoende duidelijk over. Na deze sessie is dat verleden tijd. Samen schrijven wij een kort manifesto met onze purpose, principes en waarden.\nDe voorwaarden waaronder wij maar ook onze klanten succesvol willen zijn.`,
     redButtonText: "IK GEEF JE GRAAG WAT MEER INFO",
     redButtonLink: "mailto:bas@baswesterweel.com", // FIXME
     image: Manifesto,
@@ -55,7 +55,7 @@ export const scenes = {
     barText: "Hoe raak je je publiek met jouw verhaal op jouw manier?"
   },
   "trainer_reflexor": {
-    text: `De mens is een groepsdier en we kruipen in organisaties dus vaak naar elkaar toe in talloze meetings. Daarin willen we gehoord worden. Gezien worden.\n\nDaarbij ontkomen we niet aan interpretatie en oordeel. Als je je daarvan bewust bent, kunnen bijeenkomsten plekken worden waar verandering en groei op een ander manier to stand komt.`,
+    text: `De mens is een groepsdier en we kruipen in organisaties dus vaak naar elkaar toe in talloze meetings. Daarin willen we gehoord worden.\n\nGezien worden.\n\nDaarbij ontkomen we niet aan interpretatie en oordeel. Als je je daarvan bewust bent, kunnen bijeenkomsten plekken worden waar verandering en groei op een ander manier to stand komt.`,
     redButtonText: "IK GEEF JE GRAAG WAT MEER INFO",
     redButtonLink: "mailto:bas@baswesterweel.com", // FIXME
     image: Reflexor,
@@ -68,7 +68,7 @@ export const scenes = {
     barText: "De kunst van met elkaar écht in gesprek gaan."
   },
   "presentator_podcast": {
-    text: `Samen aan tafel in een donkere studio, voorover leunend, mond bijna tegen de microfoon aan. Écht luisteren, échte gesprekken, échte verhalen maken.\n\nIk vond het als radiomaker altijd al fascinerend en dat vind als podcastmakers ook. Een podcasts is in mijn ogen en vooral oren, radio in optima forma.`,
+    text: `Samen aan tafel in een donkere studio, voorover leunend, mond bijna tegen de microfoon aan.\n\nÉcht luisteren, échte gesprekken, échte verhalen maken. Ik vond het als radiomaker altijd al fascinerend en dat vind als podcastmakers ook.\n\nEen podcasts is in mijn ogen en vooral oren, radio in optima forma.`,
     redButtonText: "LUISTER DE PODCAST",
     redButtonLink: "https://open.spotify.com/show/6r9qdWjG0oYnbgMx00qBsf",
     image: ba5, //MIST
