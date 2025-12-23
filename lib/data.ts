@@ -80,7 +80,7 @@ export const scenes = {
     barText: "Geluid prikkelt je voorstellingsvermogen."
   },
   "presentator_dagvoorzitter": {
-    text: "Voor een camera in een studio staan vind ik minder leuk dan voor een publiek staan tijdens een congres of bijeenkomst.\nDaar gebeurt altijd het onverwachte; daar houd ik van, dat zoek ik op. Interactie, plotselinge inzichten en vaak een lach en soms ook een traan.\n\nDat maakt iedere live bijeenkomst zo uniek.\n\nAls moderator wil ik de sprekers laten stralen en hen naar een zaal brengen waar het verhaal impact kan maken.",
+    text: "Voor een camera in een studio staan vind ik minder leuk dan voor een publiek staan tijdens een congres of bijeenkomst.\nDaar gebeurt altijd het onverwachte; daar houd ik van, dat zoek ik op. Interactie, plotselinge inzichten en vaak een lach en soms ook een traan.\n\nDat maakt iedere live bijeenkomst zo uniek. Als moderator wil ik de sprekers laten stralen en hen naar een zaal brengen waar het verhaal impact kan maken.",
     redButtonText: "CHECK MIJN BESCHIKBAARHEID",
     redButtonLink: "https://www.hetsprekersburo.nl/dagvoorzitters/bas-westerweel", 
     image: Dagvoorzitter,
@@ -92,7 +92,7 @@ export const scenes = {
     barText: "Op het podium voel ik me op mijn gemak. Ik weet haast niet beter."
   },
   "presentator_audio_video": {
-    text: "Steeds opnieuw achter een microfoon in een studio kruipen en het werk van een ander mogen inspreken is heerlijk.\n\nEen verhaal van een schrijver stem mogen geven is bijzonder.\n\nVooral als mijn stem bij het verhaal past en het verhaal bij mijn stem.",    redButtonText: "CONTACT DE STUDIO",
+    text: "Steeds opnieuw achter een microfoon in een studio kruipen en het werk van een ander inspreken is heerlijk.\n\nEen verhaal van een schrijver stem mogen geven is bijzonder.\n\nVooral als mijn stem bij het verhaal past en het verhaal bij mijn stem.",    redButtonText: "CONTACT DE STUDIO",
     redButtonLink: "https://www.storytel.com/nl/narrators/bas-westerweel-71077",
     image: AudioVideo,
     headerButtons: [
