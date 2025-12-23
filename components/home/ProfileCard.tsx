@@ -56,7 +56,8 @@ export default function ProfileCard({
         // TRAINER_MANIFESTO
         .replace("boven.\nWaarheen?", "boven.\n\nWaarheen?")
         .replace("Waarvoor? We", "Waarvoor?\n\nWe")
-        .replace("tijd. Samen", " tijd.\n\nSamen")
+        // De spatie voor 'tijd' is hier weggehaald zodat hij matcht met de tekst
+        .replace("tijd. Samen", "tijd.\n\nSamen")
 
         // PRESENTER_DAGVOORZITTER
         .replace("bijeenkomst.\nDaar", "bijeenkomst.\n\nDaar")
