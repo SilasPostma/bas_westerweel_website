@@ -18,7 +18,7 @@ export default function RedButton({
   const [copied, setCopied] = useState(false);
 
   const handleMailClick = async (e: React.MouseEvent) => {
-    const email = "bas@baswesterweel.com";
+    const email = "info@baswesterweel.com";
     if (href === `mailto:${email}`) {
       try {
         await navigator.clipboard.writeText(email);
